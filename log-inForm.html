@@ -1,0 +1,54 @@
+<html>
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrap/4.5.0/
+css/bootstrap.min.css"> 
+ <link rel="stylesheet" href="log-inForm.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Popper.js/1.16.0/umd/popper.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+ </head> 
+ <body> 
+  <div class="one"> 
+   <p id="two">Sign in</p> 
+   <p id="three">Sign up</p> 
+  </div> 
+  <div class="container"> 
+   <form onsubmit="validate()"> 
+    <div class="form-group"> 
+     <label for="Email">Email</label> 
+     <input type="text" id="Email" name="email" pattern="(?=.x\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="" style="border-radius:25px" class="form-control"> 
+    </div> 
+    <div id="message"> 
+     <h3>password must contain the following:</h3> 
+     <p id="letter" class="invalid">A<b>lowercase</b>letter</p> 
+     <p id="capital" class="invalid">A<b>capital</b>letter</p> 
+     <p id="length" class="invalid">minimum<b>8 characters</b></p> 
+    </div> 
+    <br> 
+    <div class="form-group"> 
+     <label for="password">Password</label> 
+     <input type="text" id="Password" name="pswd" required="" style="border-radius:25px" class="form-control"> 
+    </div> 
+    <br> 
+    <div class="form-grouo"> 
+     <label> <input type="checkbox" checked="" name="box" id="checkbox" class="form-control"> Remember me </label> 
+    </div> 
+    <br> 
+    <p>By signing in you agree to our <a href="#" style="color:dodgerblue">Terms &amp; Privacy</a></p> 
+    <a href="#" style="color:dodgerblue"> <br> 
+     <div class="form-group"> 
+      <input type="submit" name="cancel" class="form-control" value="cancel" style="width:190px"> 
+     </div> <br> 
+     <div class="form-group"> 
+      <input type="submit" class="form-control" style="width:190px" value="Sign in"> 
+     </div> 
+     <hr> </a>
+       <p style="text-align:center">Forgot Password?</p>
+   </form> 
+  </div> 
+   
+  <a href="#" style="color:dodgerblue"> </a> 
+ 
+</body></html>
